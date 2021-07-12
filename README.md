@@ -1,24 +1,19 @@
-# exercise
+Zadanie, które ma na celu przygotowanie interfejsu do obsługi API.
+ 
+Źródło danych - API REST https://jsonplaceholder.typicode.com 
+Technologia: Vue + CSS (koniecznie preprocesor)
 
-## Project setup
-```
-npm install
-```
+Użyj state management vuex.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Wyświetlanie listy postów z paginacją po 10 szt.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Poszczególny post ma wyświetlać następujące dane: 
+a. Tytuł 
+b. Skróconą treść z możliwością kliknięcia „zobacz więcej” 
+c. Imię i nazwisko autora 
+d. Przycisk do usuwania newsa Paginacja ma działać bez przeładowania strony. 
+ 
+Ocenie będzie podlegać jakość i czytelność kodu, estetyka rozwiązania, RWD i podejście do zagadnień pobierania/wysyłania danych oraz samej architektury. 
+Prosimy o przesłanie rozwiązanego zadania (najlepiej w formie linku do publicznego repozytorium).
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Zadanie z kangurkiem/gwiazdką: możliwość sortowania, filtrowania i wyszukiwania w liście postów.
