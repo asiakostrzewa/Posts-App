@@ -53,11 +53,13 @@ h1 {
   padding: 0;
   max-width: 100%;
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 }
 
 @media (min-width: $tablet) {
   .list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(48%, 2fr));
+    grid-gap: 10px;
   }
 }
 </style>

@@ -33,7 +33,6 @@ export default {
 
   .wrapper {
     background-color: white;
-    margin: 0 0 20px 0;
     padding: 10px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -78,5 +77,11 @@ export default {
     font-weight: 300;
     font-style: italic;
     text-align: right;
+  }
+
+  @media (min-width: $tablet) {
+    .wrapper {
+      height: calc(100% - 20px);
+    }
   }
 </style>
