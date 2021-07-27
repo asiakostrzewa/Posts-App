@@ -10,10 +10,16 @@ export default createStore({
     },
   },
   actions: {
-    fetchPosts(context) {
+    fetchPosts({ commit }) {
       fetch('https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10')
         .then((response) => response.json())
-        .then((json) => context.commit('SET_POST', json));
+        .then((json) => {
+          const finalPosts = json.map((item) => ({
+            ...item,
+            author: 'Jan Nowak',
+          }));
+          commit('SET_POST', finalPosts);
+        });
     },
   },
   modules: {
